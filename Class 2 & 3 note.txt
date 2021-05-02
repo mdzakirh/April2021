@@ -1,0 +1,88 @@
+Class 2
+
+1. Eclipse
+2. data types 
+
+
+eclipse
+
+	1. open project
+	2. package (all the characters of package should be in small character and there should be a dot 
+	3. class
+
+
+java main method
+
+ public - for the access of the class and method
+ static - to use the method without creating any object
+ void - not returning aything
+
+
+
+data types 
+
+int, String, float/double, boolean
+
+variable 
+
+int  100, 88, 15
+String "Hello world"
+float 10.1542
+double 10.555412551
+boolean true or false
+
+
+int x = 10;
+String x = "Hello";
+float x = 12.32;
+double y = 23.64234556;
+boolean b = true;
+
+
+
+
+
+
+
+
+
+
+Class 3
+
+understand the package
+runnable and non-runnable class
+scope of class and methods
+comment in java
+error and warning
+=   == 
+
+boolean
+
+	< > == <= >=
+conditional statement
+	if else
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
