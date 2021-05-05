@@ -1,0 +1,12 @@
+package my.first.project;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		 //TODO Auto-generated method stub
+		int x=10;
+		boolean b = true;
+		System.out.print(b);
+	}
+
+}

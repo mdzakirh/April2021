@@ -24,7 +24,47 @@ while(i <= 10){
 	i++;
 }
 
-i need you to write a code that will print only even number and ending 11
+
+
+hello 
+hello
+..
+
+
+
+
+hello
+
+
+for(int i =1; i<=10; i++){
+
+System.out.println("hello");
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

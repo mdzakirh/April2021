@@ -1,0 +1,22 @@
+package second.pack;
+
+public class LearningBoolean {
+	
+	public static void main (String args[]) {
+		
+		boolean result = true;
+		
+		int x = 10;
+		
+//		result = x > 12;
+
+		if(x > 5) {
+			System.out.println("The value is greater than 12");
+		}else {
+			System.out.println("The Value is less than 12");
+		}
+		
+		
+	}
+
+}

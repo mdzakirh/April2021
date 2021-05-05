@@ -1,0 +1,12 @@
+package array.learning;
+
+public class LearningArraysWithLoop {
+
+	public static void main(String[] args) {
+
+		int[] number = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+		
+		System.out.println(number.toString());
+	}
+
+}

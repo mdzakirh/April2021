@@ -1,0 +1,16 @@
+package second.pack;
+
+public class LearningBoolean {
+	
+	public static void main (String args[]) {
+		
+		boolean result;
+		
+		int x = 10;
+		
+		result = x > 1;
+		
+		System.out.println(result);
+	}
+
+}

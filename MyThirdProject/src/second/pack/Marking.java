@@ -4,18 +4,23 @@ public class Marking {
 
 	public static void main(String[] args) {
 
-//		int mark = 75;
-//		
-//		if(mark >= 90) {
-//			System.out.println("Grade A");
-//		}else if(mark >= 80 && mark <=89){
-//			System.out.println("Grade B");
-//		}else if(mark >= 70 && mark <=79){
-//			System.out.println("Grade c");
-//		}else {
-//			System.out.println("Failed");
-//		}
+		int mark = 75;
+		
+		if(mark >= 90) {
+			System.out.println("Grade A");
+		}else if(mark >= 80 || mark <=89){
+			System.out.println("Grade B");
+		}else if(mark >= 70 || mark <=79){
+			System.out.println("Grade c");
+		}else {
+			System.out.println("Failed");
+		}
 
+		
+//		if(mark <= 70 || mark >= 80) {
+//			
+//			System.out.println("grade c");
+//		}
 		
 		
 //		if(actual value == expected value) {
@@ -25,16 +30,16 @@ public class Marking {
 //		}
 		
 		
-		String var = "Hello";
-		
-		String actualValue = "Hello";
-		String expectedValue = "Helloo";
-		
-		if(actualValue == expectedValue) {
-			System.out.println("Test Passed");
-		}else {
-			System.out.println("Test Failed");
-		}
+//		String var = "Hello";
+//		
+//		String actualValue = "Hello";
+//		String expectedValue = "Helloo";
+//		
+//		if(actualValue == expectedValue) {
+//			System.out.println("Test Passed");
+//		}else {
+//			System.out.println("Test Failed");
+//		}
 				
 		
 		

@@ -1,0 +1,24 @@
+package second.pack;
+
+public class LearningBoolean {
+	
+	public static void main (String args[]) {
+		
+		boolean result = true;
+		
+		int x = 10;
+//		 10 > 10
+//		 10 < 10
+		 
+//		result = x > 12;
+
+		if(x < 10) {
+			System.out.println("True");
+		}else {
+			System.out.println("False");
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,47 @@
+package second.pack;
+
+public class Marking {
+
+	public static void main(String[] args) {
+
+//		int mark = 50;
+//		
+//		if(mark >= 90) {
+//			System.out.println("Grade A");
+//		}else if(mark >= 80 && mark <=89){
+//			System.out.println("Grade B");
+//		}else if(mark >= 70 && mark <=79){
+//			System.out.println("Grade c");
+//		}else {
+//			System.out.println("Failed");
+//		}
+
+		double basePrice = 30000;
+		double interestRate = 0;
+		double tax = 7 / 100;
+		double creditScore = 750;
+		double downPayment = 5000;
+		double duration = 7;
+		double actualPrice;
+		double monthlyCarPayment = 0;
+		double financingPrice;
+		{
+			actualPrice = (basePrice - downPayment);
+			System.out.println(actualPrice);
+			if (creditScore < 700) {
+				interestRate = 3.5;
+			tax = (actualPrice * 7 / 100);
+			financingPrice = actualPrice + (actualPrice * interestRate / 100);
+			monthlyCarPayment = (financingPrice / (7 * 12) + tax);
+			}else {
+				interestRate = 2.5;
+				tax = ((actualPrice * 7) / 100);
+				financingPrice = actualPrice + ((actualPrice * interestRate) / 100);
+				monthlyCarPayment = ((financingPrice / (7 * 12)) + tax);
+			}
+			System.out.println(monthlyCarPayment);
+		}
+
+	}
+
+}

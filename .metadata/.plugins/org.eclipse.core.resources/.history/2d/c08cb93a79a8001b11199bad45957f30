@@ -1,0 +1,21 @@
+package second.pack;
+
+public class Marking {
+
+	public static void main(String[] args) {
+
+		int mark = 100;
+		
+		if(mark >= 90) {
+			System.out.println("Grade A");
+		}else if(mark >= 80 && mark <=89){
+			System.out.println("Grade B");
+		}else if(mark >= 70 && mark <=79){
+			System.out.println("Grade c");
+		}else {
+			System.out.println("Failed");
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package second.pack;
+
+public class FirstClass {
+	
+	int x = 10;
+	
+	public static void main(String args[]) {
+		
+		//System.out.printls("Hello");
+		
+		int y = 10;
+	}
+
+}
