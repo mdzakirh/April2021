@@ -1,0 +1,21 @@
+int[] number = {100, 200, 300, 400, 500};
+		 0     1    2   3    4
+		int[] num = new int[10];
+		
+		String[] name = {"agile", "tech"};
+		
+		String[] names = new String[10];
+
+
+in array we always by index
+
+and the index of array start from 0
+
+if you are working with array and loop then always start your loop from 0
+
+
+instead hard coding the lengthof the array use variable name dot length function
+
+int[] number = {1, 2};
+
+number.length
