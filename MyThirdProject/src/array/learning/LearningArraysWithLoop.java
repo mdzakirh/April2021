@@ -8,17 +8,16 @@ public class LearningArraysWithLoop {
 
 		int[] number = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
 		
+				
 		boolean result = true;
 		
 		for(int i=0; i<number.length; i++) {
-			if(number[i]==700) {
+			if(number[i]==2000) {
 				result = true;
-				
+				break;
 			}else {
 				result = false;
-				break;
-			}
-			
+			}	
 		}
 		
 		if(result == true) {
