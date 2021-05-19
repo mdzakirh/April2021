@@ -1,0 +1,21 @@
+Class 6
+
+access modifiers
+	1. public
+	2. private
+	3. protected
+	4. default
+
+Return types
+
+	1. void - doesn't return anything
+	2. int
+	3. String
+	4. boolean
+	5. double
+
+If you are creating a method inside the same class with static keyword then you can call the method directly
+
+create more than one function inside the same class
+
+
