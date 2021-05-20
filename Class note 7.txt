@@ -1,0 +1,30 @@
+if your method is in same package and method have static then you can call that method writing the className.methodName
+
+creating an object
+
+className variableName = new className();
+
+function/method
+
+runnable and non-runnable class
+
+return 
+
+calling methods using static
+
+calling methods by creating an object
+
+
+
+
+create a new package
+
+then create a new class with main method
+	call that method inside the main method
+
+then create a new class without main method
+	create a method called tempConversion
+
+
+
+
