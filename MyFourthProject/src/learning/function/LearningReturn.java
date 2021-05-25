@@ -29,17 +29,43 @@ public class LearningReturn {
 //			System.out.println(result);
 //		}
 		
-		TemparatureConversion obj1 = new TemparatureConversion();
+//		TemparatureConversion obj1 = new TemparatureConversion();
+//		
+//		boolean finalResult = obj1.isPassed(75);
+//		System.out.println(finalResult);
+//		
+//		double result2 = obj1.tempConvert(90.00);
+//		double number = 100;
+//		
+//		double sum = result + number;
+//		
+//		System.out.println(sum);
 		
-		boolean finalResult = obj1.isPassed(75);
-		System.out.println(finalResult);
 		
-		double result = obj1.tempConvert(90.00);
-		double number = 100;
 		
-		double sum = result + number;
 		
-		System.out.println(sum);
+		
+		int result = AddingMethods.addingTwoNumbers(10, 25);
+		
+		int xyz = (result * 10)/100;
+		
+		System.out.println(xyz);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

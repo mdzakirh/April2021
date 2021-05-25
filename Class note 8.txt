@@ -1,0 +1,25 @@
+selenium
+
+
+sendkeys("yahoo")
+
+static is not a part of object
+
+className variableName = new className();
+
+class is a prototype and object is a real implementation of a class
+
+int[] x = {10, 20, 30, 40, 50};
+
+local variable and global variable
+
+local variables are accessable to inside that scope only
+
+global variables are accessable to whole Scope
+
+class level are accessable to whole class
+
+
+
+
+
