@@ -1,0 +1,41 @@
+cross browser functionality 
+chrome -- chromedriver
+firefox -- geckodriver
+ie - internetexplorerdriver
+
+whenever you are accessing any application like chromedriver from eclipse you need to close it from program
+
+close() -- for closing the current browser or session
+quit ()-- for closing all the browser or the session
+
+webdriver (parent class)
+	chrome driver
+	iedriver
+	geckodriver
+
+inspect element
+	right click on page then click on inspect
+	ctrl+shift+i
+	f12
+
+sekect function to select a specific function from a list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

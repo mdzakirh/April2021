@@ -1,0 +1,19 @@
+selenium
+
+selenium ide
+
+selenium rc + selenium webdriver
+
+selenium webdriver 2.0
+
+selenium 4
+
+you can automate web based applications
+open source
+multiple frameworks
+multiple programming language
+multiple browser
+multiple OS
+
+https://github.com/webrazin/libraries/tree/master/selenium
+
