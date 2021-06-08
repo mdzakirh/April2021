@@ -1,0 +1,36 @@
+not recomended is thread.sleep()
+	
+Wait
+	implicite wait
+	explicite wait
+	fluent wait
+
+implicite - all elements of the page
+explixite - its for specific elements that needs more time to show up in your page
+
+getText() -- to get text from your page
+
+qualsIgnoreCase() -- for matching any string
+
+locators ---
+ID
+NAME
+CLASS NAME
+CSS
+XPATH
+LINKTEXT
+PARTIAL LINKTEXT
+TAG NAME
+
+
+
+
+
+
+
+
+
+
+
+
+
