@@ -1,0 +1,66 @@
+TestNG
+
+test next generation
+
+
+Test(){
+	
+}
+
+1. It will give you more annotations then junit
+2. you can set priority on test
+3. skip test -- using enable option
+4. create reports
+5. Assertion
+6. set groups - regression, functional 
+7. dependency 
+
+
+test1 dependOn test3
+test2
+test3 
+
+junit
+
+@BeforeTest
+@Test
+@AfterTest
+
+TestNG
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterSuite
+@AfterTest
+@AfterClass
+@AfterMethod
+
+
+serial of testng annotation
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+Test
+@AfterMethod
+@AfterClass
+@AfterTest
+
+testNG methods runs by alphabetical order
+you can set the priority using "priority" keyword
+
+
+
+
+
+
+
+
+
+
+
+
+
