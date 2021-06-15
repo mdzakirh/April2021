@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="testscripts.Testing">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- testscripts.Testing -->
+      <class name="testscripts.homePage">
+        <methods>
+          <include name="driverInitialization"/>
+          <include name="closingBrowser"/>
+          <include name="myAccountPage"/>
+          <include name="registrationPage"/>
+        </methods>
+      </class> <!-- testscripts.homePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
