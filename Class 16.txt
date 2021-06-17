@@ -1,0 +1,34 @@
+Test scenarios
+	signup
+	signin
+
+comment in xml
+<!--  -->
+
+
+xml --- format you need follow to create a testng.xml file
+       suite
+	test
+	         classes
+		class
+	         classes
+	test
+       suite
+
+pass the data --
+	testng suite 
+	apache poi
+
+whenever you are running test with parameters then you have to run it from xml as a test suite.
+
+instead of priority you can also use dependsOnMethods
+
+
+
+
+
+
+
+
+
+
