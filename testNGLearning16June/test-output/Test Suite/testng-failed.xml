@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <test name="Home page test(failed)" preserve-order="true">
+    <classes>
+      <class name="testscripts.homePage">
+        <methods>
+          <include name="finishTest"/>
+          <include name="driverInitialization"/>
+          <include name="myAccountPage"/>
+          <include name="registrationPage"/>
+        </methods>
+      </class> <!-- testscripts.homePage -->
+    </classes>
+  </test> <!-- Home page test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

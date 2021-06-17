@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "suite">
+	<test name = "test">
+	
+	<parameter name = "emailAddress" value = "asdfhaasfah@gmail.com"></parameter>
+	<parameter name = "firstName" value = "John"></parameter>
+	<parameter name = "lastName" value = "William"></parameter>
+		<classes>
+			<class name = "testscripts.homePage"></class>
+		</classes>	
+	</test>
+</suite>

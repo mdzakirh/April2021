@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]">
+  <parameter name="firstName" value="John"/>
+  <parameter name="lastName" value="William"/>
+  <parameter name="emailAddress" value="asdfhaasfah@gmail.com"/>
+  <test name="test(failed)" preserve-order="true">
+    <parameter name="firstName" value="John"/>
+    <parameter name="lastName" value="William"/>
+    <parameter name="emailAddress" value="asdfhaasfah@gmail.com"/>
+    <classes>
+      <class name="testscripts.homePage">
+        <methods>
+          <include name="finishTest"/>
+          <include name="driverInitialization"/>
+          <include name="myAccountPage"/>
+        </methods>
+      </class> <!-- testscripts.homePage -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [suite] -->
