@@ -1,0 +1,38 @@
+Access modifier
+
+public -- same class, same package, different package
+private -- only accessable insdide the class
+protected -- is accessable within the same package, ------
+default -- is accessable within the same package
+
+
+OOP -- Object Oriented Programming
+Inheritance -- Parent class and child relationship
+Polymorphism -- Runtime Polymorphism and Compile Time Poly
+		OverRiding	          OverLoading
+Encapsulation -- means hiding sensitive data from outside 
+Abstruction -- hiding the details and showing only the important 		information
+
+To contaion an abstract method Class should be an abstract class
+An abstract class can contain abstract methods and non abstract methods
+Abstract only contain the unimplemented abstruct methods
+
+Interface - another way to do the abstraction in java
+
+public void sample(){
+ints fafafa;
+asdf;
+}
+
+public void sample2();
+
+
+1. between the abstract class and interface, interface is more secure
+2. you can create an object of an abstract class, but not for interface
+3. in inteface you have implement all the methods of interface
+4. interface methods do not have any body or implmentation
+
+
+
+
+
