@@ -3,9 +3,28 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   	
-    <classes>
-      <class name="testscripts.Testing"/>
-      <class name="testscripts.homePage"/>
+  	<groups>
+  		<run>
+  	 		<include name="sanity"></include>
+  		</run>
+  	</groups>
+  	 <classes>
+<!--       <class name="testscripts.Testing"/> -->
+      <class name="testscripts.SerializationOfTestNG"/>
     </classes>
+
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  	 		<include name="sanity"></include>
+  		</run>
+  	</groups>
+  	 <classes>
+<!--       <class name="testscripts.Testing"/> -->
+      <class name="testscripts.SerializationOfTestNG"/>
+    </classes>
+
   </test> <!-- Test -->
 </suite> <!-- Suite -->

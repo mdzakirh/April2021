@@ -1,4 +1,4 @@
-package testscripts;
+package regression;
 
 import java.util.concurrent.TimeUnit;
 
@@ -43,7 +43,7 @@ public class Testing {
 	public void accountPage() {
 		WebElement emailAddressTextBox = driver.findElement(By.id("email_create"));
 		emailAddressTextBox.clear();
-		emailAddressTextBox.sendKeys("alsdhhsd35252@gmail.com");
+		emailAddressTextBox.sendKeys("alsdhhsdgfsd35252@gmail.com");
 		
 		WebElement createAnElementButton = driver.findElement(By.name("SubmitCreate"));
 		createAnElementButton.click();

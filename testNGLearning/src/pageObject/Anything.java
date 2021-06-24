@@ -1,0 +1,5 @@
+package pageObject;
+
+class Anything {
+
+}

@@ -6,27 +6,42 @@ import org.testng.annotations.Test;
 
 public class SerializationOfTestNG {
 
+	public SerializationOfTestNG() {
+		
+	}
+	
 	@BeforeTest
 	public void beforeTest() {
 		System.out.println("@BeforeTest");
 	}
 	
-	@Test (priority = 1)
-	public void testB() {
-		System.out.println("Test");
-	}
-	
-	@Test(priority = 2)
+	@Test (groups = {"smoke"})
 	public void testA() {
-		System.out.println("Test");
+		System.out.println("TestA");
 	}
 	
-	@Test(priority = 3)
+
+	@Test(groups = {"smoke", "sanity"})
+	public void testB() {
+		System.out.println("TestB");
+	}
+	
+	@Test(groups = {"sanity"})
 	public void testC() {
-		System.out.println("Test");
+		System.out.println("TestC");
 	}
 	
-	@AfterTest
+	@Test(groups = {"smoke", "sanity","regression"})
+	public void testD() {
+		System.out.println("TestD");
+	}
+	
+	@Test(groups = {"regression"})
+	public void testE() {
+		System.out.println("TestE");
+	}
+	
+	@AfterTest(alwaysRun = true)
 	public void afterTest() {
 		System.out.println("@AfterTest");
 	}

@@ -11,20 +11,40 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
-public class homePage {
+import pageObject.HomePageObjects;
+import pageObject.RegistrationPageObj;
+import pageObject.SignInPageObj;
+import pageObject.UserHomePageObj;
+
+public class homePage{
+	
 	HomePageObjects homePageObj;
 	SignInPageObj signInPageObj;
 	RegistrationPageObj registrationPageObj;
 	UserHomePageObj userHomePageObj;
 	
+	
 	WebDriver driver;
 		
-	@BeforeTest
-	public void driverInitialization() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\drivers\\chromedriver.exe");
+	@Parameters ("browser")
+	@BeforeTest(groups = {"smoke"})
+	public void driverInitialization( String browser) {
+		if(browser.equals("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\drivers\\chromedriver.exe");
+			driver = new ChromeDriver();
+		}else if(browser.equals("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Agile1Tech\\Desktop\\drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
 		
-		WebDriver driver = new ChromeDriver();
+		
+		
+//		System.setProperty("webdriver.internetExplorer.driver", "C:\\Users\\Agile1Tech\\Desktop\\drivers\\ie.exe");
+		
+		
+//		driver = new InternetExplorer();
 		
 		driver.navigate().to("http://automationpractice.com/");
 		
@@ -43,28 +63,33 @@ public class homePage {
 	}
 	
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = {"smoke"})
 	public void indexPage() {
+		boolean value = homePageObj.signInButton().isDisplayed();
+		Assert.assertTrue(value);
 		homePageObj.signInButton().click();
-		
 	}
 	
-	@Test(priority = 2)
-	public void signInPage() {
+	
+	@Parameters ("emailAddress")
+	@Test(priority = 2, groups = {"smoke"})
+	public void signInPage(String emailAddress) {
 		
 		signInPageObj.emailAddressText().clear();
-		signInPageObj.emailAddressText().sendKeys("al457@gmail.com");
+		signInPageObj.emailAddressText().sendKeys(emailAddress);
 				
 		signInPageObj.createButton().click();
 	}
 	
+	
+	@Parameters ({"firstName","lastName"})
 	@Test(priority = 3)
-	public void registrationPage() {
+	public void registrationPage(String firstName, String lastName) {
 		registrationPageObj.firstNameTextBox().clear();
-		registrationPageObj.firstNameTextBox().sendKeys("John");
+		registrationPageObj.firstNameTextBox().sendKeys(firstName);
 		
 		registrationPageObj.lastNameTextBox().clear();
-		registrationPageObj.lastNameTextBox().sendKeys("Williams");
+		registrationPageObj.lastNameTextBox().sendKeys(lastName);
 		
 		registrationPageObj.passwordTextBox().clear();
 		registrationPageObj.passwordTextBox().sendKeys("testing");
@@ -94,11 +119,15 @@ public class homePage {
 		String actualUserNameText = userHomePageObj.userName().getText();
 		
 		Assert.assertEquals(actualUserNameText, expectedUserNameText);
-
+//		Assert.assertTrue(condition);
+//		Assert.assertFalse(condition);
+		
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(actualUserNameText, expectedUserNameText);
 	}
 	
-	@AfterTest
-	public void closingBrowser() {
+	@AfterTest(groups = {"smoke"})
+	public void finishTest() {
 		driver.quit();
 	}
 }

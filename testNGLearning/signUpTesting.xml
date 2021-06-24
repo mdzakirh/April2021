@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test Suite">
+
+<test name = "Home page test">
+	<classes>
+		<class name = "testscripts.homePage"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+		<class name = "testscripts.Testing"></class>
+	</classes>
+
+</test>
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
