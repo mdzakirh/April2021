@@ -1,0 +1,18 @@
+1. Organize codes
+2. Assertion -- to do the pass/fail scenario
+3. Test Suite -- smoke, sanity, (both)
+4. Report
+5. Data driven
+
+
+TestNG - annotations, sequence, parallel
+Cucumber - tags, hooks
+
+BDD - Behaviour Driven Development -- feature files
+
+Non-technical person 
+	--Feature file -- instructions 
+Technical person
+	-- Step Definition -- test script for that instruction
+
+https://www.saucedemo.com/
