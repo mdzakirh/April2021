@@ -32,7 +32,14 @@ public void sample2();
 3. in inteface you have implement all the methods of interface
 4. interface methods do not have any body or implmentation
 
+can you do multiple or multilevel inheritance?
 
+Class extends Class
+Class implements Interface
+Interface extends Interface
+
+A class can extend only one class
+A class can implement multiple interfaces
 
 
 
