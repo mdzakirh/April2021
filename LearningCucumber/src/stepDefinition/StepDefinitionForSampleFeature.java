@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -83,6 +84,47 @@ public class StepDefinitionForSampleFeature {
 	public void i_should_be_in_the_same_page() throws Throwable {
 		Assert.assertEquals("https://www.saucedemo.com/", driver.getCurrentUrl());
 	}
+	
+	//////// data from feature file
+	
+	@Given("^I am in a \"([^\"]*)\"$")
+	public void i_am_in_a(String signinPage) throws Throwable {
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\drivers\\chromedriver.exe");
+		
+		
+		driver = new ChromeDriver();
+		
+		driver.navigate().to(signinPage);
+		
+		driver.manage().deleteAllCookies();
+		
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+	}
+
+	@When("^Insert valid \"([^\"]*)\" in username text box$")
+	public void insert_valid_in_username_text_box(String username) throws Throwable {
+		WebElement userName = driver.findElement(By.xpath("//*[@id=\"user-name\"]"));
+		userName.clear();
+		userName.sendKeys(username);
+	}
+
+	@When("^Insert valid \"([^\"]*)\" in password text box$")
+	public void insert_valid_in_password_text_box(String pwd) throws Throwable {
+		WebElement password = driver.findElement(By.xpath("//*[@id=\"password\"]"));
+		password.clear();
+		password.sendKeys(pwd);
+	}
+	
+	
+	@After
+	public void closeDriver() {
+		driver.close();
+	}
+
 
 
 }
