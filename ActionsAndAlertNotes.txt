@@ -1,0 +1,22 @@
+IN MAVEN PROJECT
+
+Go to Amazon.com
+Click on "All" button/link
+click on "Best sellers"
+Match the header label of the page.
+
+How to handle alert
+	1. accept
+	2. dismiss
+	3. gettext
+	4. sendKeys
+
+Java Robot class or AutoIT script
+
+How to use mouse hover -- Actions class
+
+
+How to read from excel file
+
+
+
